@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To_Do_List - complete your task easily</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loading-text">Loading...</div>
+    </div>
+    <header class="header">
+        <nav>
+            <h1><img src="images/tmIcon.png" alt="Task Manager Icon" class="header-icon">Task Manager</h1>
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To Do List <img src="images/logo.png" alt=""></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Enter your task">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <div>
+                <ul id="list-task">
+                   <!--  <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li>
+                    <li>Task 4</li>
+                    <li>Task 5</li> -->
+                </ul>
+            </div>
+            <div class="reset-container">
+                <button onclick="resetTasks()" class="reset-btn">Reset All Tasks</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>Created with ❤️ by <a href="https://github.com/aashishrajput9838" target="_blank">Aashish Rajput</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
